@@ -1,14 +1,27 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div class="container">
+        <h1>나의 포트폴리오</h1>
+        <div class="input-section">
+            <label for="university">대학교:</label>
+            <input type="text" id="university" placeholder="대학교 이름을 입력하세요">
+            <label for="gpa">학점:</label>
+            <input type="text" id="gpa" placeholder="학점을 입력하세요">
+            <button id="add-btn">정보 추가</button>
+        </div>
+        <div class="portfolio-section">
+            <h2>내 정보</h2>
+            <p><strong>대학교:</strong> <span id="display-university"></span></p>
+            <p><strong>학점:</strong> <span id="display-gpa"></span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
